@@ -60,7 +60,7 @@ body {
   max-width: 200px;
   margin:0 auto;
   text-align: center;
-  padiding:10px;
+  padding:10px;
 }
 .result{
   text-align: center;
@@ -78,6 +78,6 @@ body {
 }
 #reset:hover{
   background-color: #000000;
-  
+  color:#ffffff;
 }
 
