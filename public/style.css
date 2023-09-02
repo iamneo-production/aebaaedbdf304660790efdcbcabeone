@@ -24,5 +24,11 @@ body {
   margin: 35px;
 }
 .row{
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn{
+  border: 75px;
+  radius:75px;
 }
