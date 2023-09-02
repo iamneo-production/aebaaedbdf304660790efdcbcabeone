@@ -38,19 +38,16 @@ const ticTacToe = (element, index) => {
             return;
         }
     }
-
+        // Check for a draw (all cells filled)
+    if (!cells.includes('')) {
+        result.textContent = 'It\'s a draw!';
+        return;
+    }
     // Toggle the current player
     currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
 
-
-    // Your code to update the game state and check for a win
-    // ...
-
     // Your code to display the current player's turn
     result.textContent = `Current player: ${currentPlayer}`;
-
-    // Your code to handle button and cell interactions
-    // ...
 };
 
     /*
@@ -69,9 +66,6 @@ const resetGame = () => {
     cells = ['', '', '', '', '', '', '', '', ''];
     currentPlayer = 'X';
     result.textContent = '';
-    // Your code to update the 'result' element
-    // ...
-
     // Your code to re-enable buttons
     btns.forEach((btn) => {
         btn.textContent = '';
